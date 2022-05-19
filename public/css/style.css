@@ -1,0 +1,332 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	color: #000; 
+	text-align: justify; 
+	line-height:1.5;
+}
+a{
+	color: #af2535;
+	text-decoration: none;
+}
+
+/* Стили формы
+-----------------------------------------------------------------------------*/
+form {
+	margin:  0 auto;
+	width: 600px;
+}
+
+input, select, textarea, button {
+	height: 50px;
+	width: 100%;
+	margin: 10px 0;
+	border: solid 1px black;
+	padding-left: 10px;
+	font-size: 14pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+input[type=file] {
+	border: none;
+	height: 30px;
+	padding: 0;
+}
+input[type=submit],
+input[type=button],
+button {
+	padding: 0;
+	border: none;
+	color: white;
+	background-color: #af2535;
+	cursor: pointer;
+}
+textarea {
+	padding: 10px;
+	height: 150px;
+}
+
+/* настройки оформления блока Header
+-----------------------------------------------------------------------------*/
+header {
+	margin:0 auto;
+	width:100%;
+	height:30%;
+	background-image: url("../images/DDR3.png");
+	background-size: 100%;
+}
+
+header>div{
+	text-align: center;
+	vertical-align: middle;
+	margin:auto;
+}
+
+header>div>h1, header>div>h2{ 
+	font-weight: normal;
+	font-style: normal;
+	color:#fff;
+}
+	
+header>div>h1 {	font-size: 6em;}
+header>div>h2 {	font-size: 2em;}
+
+.logo{
+	width: auto;
+	height: auto;
+	display: block;
+	padding:20px;
+}
+
+.backlogo1{
+	margin-top: 9em;
+	margin-left: 52em;
+	position: absolute;
+	z-index: -0.5;
+	transform: rotate(10deg);
+}
+.backlogo2{
+	margin-top: 20em;
+	margin-left: 94em;
+	position: absolute;
+	z-index: -0.5;
+	transform: rotate(-10deg);
+}
+
+/* настройки оформления основной части страницы
+-----------------------------------------------------------------------------*/
+.homepage {
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+	background-image: url("../images/Marx1.jpg");
+	background-color: #af2535;
+	background-size: 100%;
+	height:30%;
+	padding: 1%;
+}
+	.homepage>p { padding:1%;}
+	.homepage ul {text-align: left;}
+	.homepage hr {margin: 50px 0}
+		
+.content{
+	display: block;
+	background-color: #af2535;
+	color: #ffff;
+	border-radius: 10px;
+	width: 400px;
+	height: 100%;
+	padding: 1%;
+	margin-top: 12%;
+	margin-bottom: 12%;
+	transition: 0.4s ease-in-out;
+}
+.content:hover{
+	background-color: #ffff;
+	color: #af2535;
+}
+.content p, .content h1{
+    background-color: none;
+}
+.content p{
+    margin-top: 5%;
+}
+.content a{
+	color: #af2535;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 20%;
+	margin-bottom: 10%;
+}
+.content img{
+	margin-left: 25%;
+	border-radius: 10px;
+}
+.content iframe{
+	width: 60%;
+	height: 60%;;
+	margin-left: 20%;
+}
+aside{
+	float:right;
+}
+aside .content{
+	height: 25%;
+}
+h1 	{ text-align: center;} 
+	
+h1, h2, h3{  /* форматирование для нескольких элементов */
+	font-style: italic;
+}
+.homepage h2 {	
+	padding-left: 2em;
+	padding-top: 2em;
+	font-size: 1.5em;
+	font-weight: normal;
+	font-style: normal;
+	color:#af2535;
+}
+.monoBackg{
+	margin:0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #af2535;
+	background-size: 100%;
+	height:30%;
+	padding: 1%;
+}
+
+.monoBackg .content{
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.row{
+	float:left;
+	width:100%;	
+	padding:5px;
+	text-align:center;
+}
+
+/*  настройки оформления блока Footer
+-----------------------------------------------------------------------------*/
+footer {
+	border-top: 5px solid #fff;
+	background-color: #af2535;
+}
+
+footer>div{
+	margin: 0 auto 0;
+	padding-top:1%;
+	padding-bottom:1%;
+	width: 80%;
+}
+
+footer>div>p {
+	font-size: 12pt; 
+	font-style: italic;
+	color: #ffffff;
+	text-align: center;
+}
+
+/*  настройки оформления меню
+-----------------------------------------------------------------------------*/
+section{ 
+	width: 100%;
+	background-color: #af2535;
+	border-top: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	display:grid;
+	grid-template-columns: 30% 60%;
+} 
+table a, nav a{
+	text-align: center;
+	display: block;
+	border-radius: 10px;
+    padding: 80px;
+    background-color: b0273a;
+    text-decoration: none;
+	font-size: 14pt;
+	font-weight: 700;
+	color: #fff;
+	transition: 0.4s ease-in-out;
+}
+table a:hover, nav a:hover{
+    background-color: #fff;
+	padding: 60px;
+	margin:20px;
+	color: #af2535;
+}
+.content_block nav a{
+	color: #af2535;
+}
+.content_block{
+	text-align: center;
+}
+.content_block nav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.content_block table a:hover, .content_block nav a:hover{
+	color: #fff;
+	background-color: #af2535;
+}
+.PageBackg{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 12pt; 
+	font-style: italic;
+	background-color: #af2535;
+	color: #ffffff;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.PageBackg iframe{
+	width: 50em;
+	height: 30em;;
+	margin-left: 10%;
+}
+
+.PageBackg img{
+	border-radius: 10px;
+	height: 50%;
+	width: 50%;
+	margin-left: 25%;
+}
+.PageBackg .content{
+	display: block;
+	background-color: #af2535;
+	color: #ffff;
+	border-radius: 10px;
+	width: 75%;
+	height: 100%;
+	padding: 1%;
+	margin-top: 2%;
+	margin-left: 10%;
+	margin-bottom: 2%;
+	transition: 0.4s ease-in-out;
+}
+
+.PageBackg .content:hover{
+	background-color: #ffff;
+	color: #af2535;
+}
+
+.PageBackg .content iframe{
+	width: 30em;
+	height: 20em;;
+	margin-left: 10%;
+}
+
+footer img{
+	margin:25px;
+	height: 5%;
+	width: 5%;
+}
+
+
+
+
+
+
+
+
+  
+
+
+
